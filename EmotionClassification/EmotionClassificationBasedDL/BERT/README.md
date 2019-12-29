@@ -1,8 +1,10 @@
 # BERT_Chinese_Classification
+**我又参考了[详述BERT fine-tune 中文分类实战及预测](https://blog.csdn.net/xavier_muse/article/details/95729133)的一篇文章，重写了一个处理的函数，能够读取.tsv的文件。并且补充了如何进行预测的一块知识。**<br>
+
 本实验，是用BERT进行中文情感分类，记录了详细操作及完整程序
 
 本文参考[奇点机智的文章](https://www.jianshu.com/p/aa2eff7ec5c1)，记录自己在运行BERT中的一些操作。<br>
-**我又参考了[详述BERT fine-tune 中文分类实战及预测](https://blog.csdn.net/xavier_muse/article/details/95729133)的一篇文章，重写了一个处理的函数，能够读取.tsv的文件。并且补充了如何进行预测的一块知识。**
+
 
 BERT的代码同论文里描述的一致，主要分为两个部分。一个是**训练语言模型（language model）的预训练（pretrain）部分**。另一个是**训练具体任务(task)的fine-tune部分**。
 
