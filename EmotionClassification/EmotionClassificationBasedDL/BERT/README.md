@@ -27,6 +27,7 @@ Chinese Simplified and Traditional, 12-layer, 768-hidden, 12-heads, 110M paramet
 - vocab.txt是训练时中文文本采用的字典
 - bert_config.json是BERT在训练时，可选调整的一些参数
 
+**PS:  这个模型要下载下来，放入这个文件夹中**
 ## 修改 processor
 
 任何模型的训练、预测都是需要有一个明确的输入，而BERT代码中processor就是负责对模型的输入进行处理。我们以分类任务的为例，介绍如何修改processor来运行自己数据集上的fine-tune。在run_classsifier.py文件中我们可以看到，google对于一些公开数据集已经写了一些processor，如XnliProcessor,MnliProcessor,MrpcProcessor和ColaProcessor。这给我们提供了一个很好的示例，指导我们如何针对自己的数据集来写processor。
