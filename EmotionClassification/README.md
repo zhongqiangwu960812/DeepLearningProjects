@@ -22,7 +22,7 @@
 >
 >PS： 发现.txt之后的数据集效果并不是很好，所以改成了.tsv数据集，参考的一篇[博客](https://blog.csdn.net/xavier_muse/article/details/95729133)，新写了一个processor
 
-## [3. EmotioinClassificationBasedLSTM]()
+## [3. EmotioinClassificationBasedLSTM](https://github.com/zhongqiangwu960812/DeepLearningProjects/tree/master/EmotionClassification/EmotionClassificationBasedLSTM)
 > 任务分析
 >> 基于上面的要求，这次又尝试了新的一种模型，采用了
 word2Vector+LSTM. 由于BERT是以字为单位的，并且如果数据集太小的话，对于BERT来说，很容易产生过拟合现象，所以尝试了word2Vector进行构建词嵌入矩阵，因为对于单个词来说，可能并不好把我相关性，这个词嵌入矩阵是以句子为单位的。 然后建立LSTM模型进行的训练和测试，这里最后一层是softmax输出的各个类的概率。
